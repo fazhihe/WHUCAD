@@ -1,0 +1,86 @@
+solid CATIA STL
+  facet normal  0.000000e+000  3.612417e-001  9.324723e-001
+    outer loop
+      vertex -3.659539e-002 -3.946548e-002  2.643956e-002
+      vertex  3.659539e-002 -3.946548e-002  2.643956e-002
+      vertex -3.659539e-002  2.878289e-002  0.000000e+000
+    endloop
+  endfacet
+  facet normal  -0.000000e+000  3.612417e-001  9.324723e-001
+    outer loop
+      vertex -3.659539e-002  2.878289e-002  0.000000e+000
+      vertex  3.659539e-002 -3.946548e-002  2.643956e-002
+      vertex  3.659539e-002  2.878289e-002  0.000000e+000
+    endloop
+  endfacet
+  facet normal  0.000000e+000  0.000000e+000 -1.000000e+000
+    outer loop
+      vertex -3.659539e-002 -4.440789e-002  0.000000e+000
+      vertex -3.659539e-002  2.878289e-002  0.000000e+000
+      vertex  3.659539e-002 -4.440789e-002  0.000000e+000
+    endloop
+  endfacet
+  facet normal  0.000000e+000  0.000000e+000 -1.000000e+000
+    outer loop
+      vertex  3.659539e-002 -4.440789e-002  0.000000e+000
+      vertex -3.659539e-002  2.878289e-002  0.000000e+000
+      vertex  3.659539e-002  2.878289e-002  0.000000e+000
+    endloop
+  endfacet
+  facet normal -1.000000e+000  0.000000e+000  0.000000e+000
+    outer loop
+      vertex -3.659539e-002  2.878289e-002  0.000000e+000
+      vertex -3.659539e-002 -4.316168e-002  1.344877e-002
+      vertex -3.659539e-002 -3.946548e-002  2.643956e-002
+    endloop
+  endfacet
+  facet normal -1.000000e+000  0.000000e+000  0.000000e+000
+    outer loop
+      vertex -3.659539e-002  2.878289e-002  0.000000e+000
+      vertex -3.659539e-002 -4.440789e-002  0.000000e+000
+      vertex -3.659539e-002 -4.316168e-002  1.344877e-002
+    endloop
+  endfacet
+  facet normal  1.000000e+000  -0.000000e+000  0.000000e+000
+    outer loop
+      vertex  3.659539e-002 -3.946548e-002  2.643956e-002
+      vertex  3.659539e-002 -4.316168e-002  1.344877e-002
+      vertex  3.659539e-002  2.878289e-002  0.000000e+000
+    endloop
+  endfacet
+  facet normal  1.000000e+000  0.000000e+000  0.000000e+000
+    outer loop
+      vertex  3.659539e-002 -4.316168e-002  1.344877e-002
+      vertex  3.659539e-002 -4.440789e-002  0.000000e+000
+      vertex  3.659539e-002  2.878289e-002  0.000000e+000
+    endloop
+  endfacet
+  facet normal  0.000000e+000 -9.618257e-001  2.736631e-001
+    outer loop
+      vertex  3.659539e-002 -3.946548e-002  2.643956e-002
+      vertex -3.659539e-002 -3.946548e-002  2.643956e-002
+      vertex  3.659539e-002 -4.316168e-002  1.344877e-002
+    endloop
+  endfacet
+  facet normal  0.000000e+000 -9.618257e-001  2.736631e-001
+    outer loop
+      vertex  3.659539e-002 -4.316168e-002  1.344877e-002
+      vertex -3.659539e-002 -3.946548e-002  2.643956e-002
+      vertex -3.659539e-002 -4.316168e-002  1.344877e-002
+    endloop
+  endfacet
+  facet normal  0.000000e+000 -9.957343e-001  9.226821e-002
+    outer loop
+      vertex  3.659539e-002 -4.316168e-002  1.344877e-002
+      vertex -3.659539e-002 -4.316168e-002  1.344877e-002
+      vertex  3.659539e-002 -4.440789e-002  0.000000e+000
+    endloop
+  endfacet
+  facet normal  0.000000e+000 -9.957343e-001  9.226821e-002
+    outer loop
+      vertex  3.659539e-002 -4.440789e-002  0.000000e+000
+      vertex -3.659539e-002 -4.316168e-002  1.344877e-002
+      vertex -3.659539e-002 -4.440789e-002  0.000000e+000
+    endloop
+  endfacet
+endsolid CATIA STL
