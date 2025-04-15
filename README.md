@@ -2,9 +2,7 @@
 
 This repository provides source data for our paper:
 
-[A parametric and feature-based
-CAD dataset to support human-computer
-interaction for advanced 3D shape learning]([https://arxiv.org/abs/2105.09492](https://journals.sagepub.com/doi/full/10.3233/ICA-240744))
+[A parametric and feature-based CAD dataset to support human-computer interaction for advanced 3D shape learning](https://journals.sagepub.com/doi/full/10.3233/ICA-240744)
 
 WHUCAD is the first full parametric and feature-based CAD dataset to support HCI in 3D learning, and therefore can support generating CAD models with real-world engineering features as advanced as that created by human engineers.
 
