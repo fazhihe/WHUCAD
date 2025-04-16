@@ -37,3 +37,83 @@ EISSN = {1875-8835},
 Unique-ID = {WOS:001360811000005},
 }
 ```
+
+## Prerequisites
+
+- Linux
+- NVIDIA GPU + CUDA CuDNN
+- Python 3.7, PyTorch 1.5+
+
+## Dependencies
+
+Install python package dependencies through pip:
+
+```bash
+$ pip install -r requirements.txt
+```
+
+## Training
+
+See all hyper-parameters and configurations under `config` folder. To train the autoencoder:
+
+```bash
+$ python train.py --exp_name WHUCAD -g 0
+```
+
+For random generation, further train a latent GAN:
+
+```bash
+# encode all data to latent space
+$ python test.py --exp_name WHUCAD --mode enc --ckpt 1000 -g 0
+
+# train latent GAN (wgan-gp)
+$ python lgan.py --exp_name WHUCAD --ae_ckpt 1000 -g 0
+```
+
+The trained models and experment logs will be saved in `proj_log/WHUCAD/` by default.
+
+## Testing and Evaluation
+
+#### __Autoencoding__
+
+  After training the autoencoder, run the model to reconstruct all test data:
+
+```bash
+$ python test.py --exp_name WHUCAD --mode rec --ckpt 1000 -g 0
+```
+
+The results will be saved in`proj_log/WHUCAD/results/test_1000` by default in the format of `h5` (CAD sequence saved in vectorized representation).
+
+To evaluate the results:
+
+```bash
+$ cd evaluation
+# for command accuray and parameter accuracy
+$ python evaluate_ae_acc.py --src ../proj_log/WHUCAD/results/test_1000
+```
+
+#### __Random Generation__
+
+  After training the latent GAN, run latent GAN and the autoencoder to do random generation:
+
+```bash
+# run latent GAN to generate fake latent vectors
+$ python lgan.py --exp_name WHUCAD --ae_ckpt 1000 --ckpt 200000 --test --n_samples 9000 -g 0
+
+# run the autoencoder to decode into final CAD sequences
+$ python test.py --exp_name WHUCAD --mode dec --ckpt 1000 --z_path proj_log/WHUCAD/lgan_1000/results/fake_z_ckpt200000_num9000.h5 -g 0
+```
+
+The results will be saved in`proj_log/WHUCAD/lgan_1000/results` by default.
+
+## Visualization and Export
+
+We provide scripts to visualize CAD models in CATIA software.
+
+```bash
+$ python vec2catia.py --src {source folder}  # CATIA software needs to be installed in advance.
+```
+
+## Acknowledgement
+
+We would like to thank and acknowledge referenced codes from [DeepCAD: A Deep Generative Network for Computer-Aided Design Models](https://arxiv.org/abs/2105.09492).
