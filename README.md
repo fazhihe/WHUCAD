@@ -12,7 +12,7 @@ A gallery of WHUCAD dataset is shown above.
 
 The vector format of WHUCAD is in the folder of ./data/vec . 
 
-The link to download B-rep format of WHUCAD is https://gitee.com/fred926/whucad-brep. 
+The link to download Mesh format of WHUCAD is https://gitee.com/fred926/whucad-mesh. 
 
 The link to download Multiview format of WHUCAD is https://gitee.com/fred926/whucad-multiview.
 
