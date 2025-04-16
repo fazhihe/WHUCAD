@@ -19,7 +19,7 @@ def get_dataloader(phase, config, shuffle=None):
 class CADDataset(Dataset):
     def __init__(self, phase, config):
         super(CADDataset, self).__init__()
-        self.raw_data = os.path.join(config.data_root, "cad_vec") # h5 data root
+        self.raw_data = os.path.join(config.data_root, "vec") # h5 data root
         self.phase = phase
         self.aug = config.augment
         self.path = os.path.join(config.data_root, "train_val_test_split.json")
