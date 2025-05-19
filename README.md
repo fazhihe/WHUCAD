@@ -112,10 +112,6 @@ The results will be saved in`proj_log/WHUCAD/lgan_1000/results` by default.
 
 We provide scripts to visualize CAD models in CATIA software.
 
-```bash
-$ python vec2catia.py --src {source folder}  # CATIA software needs to be installed in advance.
-```
-
 ## Acknowledgement
 
 We would like to thank and acknowledge referenced codes from [DeepCAD: A Deep Generative Network for Computer-Aided Design Models](https://arxiv.org/abs/2105.09492).
