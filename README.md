@@ -16,7 +16,7 @@ The link to download Mesh format of WHUCAD is https://gitee.com/fred926/whucad-m
 
 The link to download Brep format of WHUCAD is https://gitee.com/fred926/whucad-brep.
 
-The link to download Multiview format of WHUCAD is https://wdisk.whu.edu.cn/d/2cc15db07f7640b6b0e0. The password is: 20250610
+The link to download Multiview format of WHUCAD is https://wdisk.whu.edu.cn/d/2cc15db07f7640b6b0e0. The password is: whucad250610
 
 WHUCAD consists of two subsets. The first subset is derived from DeepCAD. We augment the data by randomly inserting sequences containing advanced features into DeepCAD data. The advantage of this approch is that it can obtain a rich amount of data with advanced features for learning and complex processing steps. We filter out unreasonable augmented data and check every model to ensure that WHUCAD has no redundant data. These models are in folders 0000-0099. The second subset comes from manual construction. We build 4,244 CAD models from the ABC dataset that have fruitful advanced features and semantic meaning but cannot be parsed into a command sequence by DeepCAD due to the lack of a selection mechanism. All models in the second subset of WHUCAD are macro recorded by CATIA and then parsed into vector sequence format. These models are in folders 0100-0103.
 
